@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+Output Page
+</title>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name </th>
+        <th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for output in data %} 
+            <tr>
+                <td>{{output[0]}}</td>
+                <td>{{output[1]}}</td>
+            </tr>
+        {% endfor %}       
+    </tbody>
+</table>
+</body>
+</html>
